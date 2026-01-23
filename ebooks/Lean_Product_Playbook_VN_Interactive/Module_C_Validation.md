@@ -45,15 +45,15 @@ The engine of Lean Product Development. You must complete the loop to learn.
 
 ```mermaid
 graph TD
-    A[<b>Hypothesize</b><br>Problem/Solution assumptions] -->|Define hypotheses| B(<b>Design</b><br>Create Artifact/MVP)
-    B -->|Build/Prototype| C(<b>Test</b><br>Show to Customers)
-    C -->|Observe/Measure| D[<b>Learn</b><br>Validate/Invalidate]
+    A["**Hypothesize**<br/>Problem/Solution assumptions"] -->|Define hypotheses| B["**Design**<br/>Create Artifact/MVP"]
+    B -->|Build/Prototype| C["**Test**<br/>Show to Customers"]
+    C -->|Observe/Measure| D["**Learn**<br/>Validate/Invalidate"]
     D -->|Iterate or Pivot| A
 
-    style A fill:#e1f5fe,stroke:#01579b,stroke-width:2px
-    style B fill:#fff9c4,stroke:#fbc02d,stroke-width:2px
-    style C fill:#e0f2f1,stroke:#00695c,stroke-width:2px
-    style D fill:#f3e5f5,stroke:#8e24aa,stroke-width:2px
+    style A fill:#e1f5fe,stroke:#01579b,stroke-width:2px,color:#000
+    style B fill:#fff9c4,stroke:#fbc02d,stroke-width:2px,color:#000
+    style C fill:#e0f2f1,stroke:#00695c,stroke-width:2px,color:#000
+    style D fill:#f3e5f5,stroke:#8e24aa,stroke-width:2px,color:#000
 ```
 
 ---

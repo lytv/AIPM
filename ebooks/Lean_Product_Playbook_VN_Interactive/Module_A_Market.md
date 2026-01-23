@@ -22,24 +22,25 @@ Chúng ta đang xây dựng hai tầng dưới cùng – nền móng của mọi
 
 ```mermaid
 graph BT
-    classDef current fill:#ffcc80,stroke:#e65100,stroke-width:3px;
-    classDef pending fill:#e1f5fe,stroke:#90a4ae,stroke-width:1px;
-
-    L1[1. Khách Hàng Mục Tiêu<br/>(Target Customer)]:::current
-    L2[2. Nhu Cầu Chưa Được Đáp Ứng<br/>(Underserved Needs)]:::current
-    L3[3. Tuyên Bố Giá Trị<br/>(Value Proposition)]:::pending
-    L4[4. Bộ Tính Năng<br/>(Feature Set)]:::pending
-    L5[5. Trải Nghiệm Người Dùng<br/>(UX)]:::pending
+    L1["1. Khách Hàng Mục Tiêu<br/>(Target Customer)"]:::current
+    L2["2. Nhu Cầu Chưa Được Đáp Ứng<br/>(Underserved Needs)"]:::current
+    L3["3. Tuyên Bố Giá Trị<br/>(Value Proposition)"]:::pending
+    L4["4. Bộ Tính Năng<br/>(Feature Set)"]:::pending
+    L5["5. Trải Nghiệm Người Dùng<br/>(UX)"]:::pending
 
     L1 --> L2
     L2 --> L3
     L3 --> L4
     L4 --> L5
 
-    subgraph "CHÚNG TA ĐANG Ở ĐÂY"
-    L1
-    L2
+    subgraph HERE_SECTION ["CHÚNG TA ĐANG Ở ĐÂY"]
+        L1
+        L2
     end
+
+    classDef current fill:#ffcc80,stroke:#e65100,stroke-width:3px,color:#000
+    classDef pending fill:#e1f5fe,stroke:#90a4ae,stroke-width:1px,color:#000
+    style HERE_SECTION fill:#fff8e1,stroke:#ffb74d,stroke-width:2px,stroke-dasharray: 5 5
 ```
 
 ---

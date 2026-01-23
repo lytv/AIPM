@@ -26,13 +26,13 @@ Created by Dave McClure, this is the gold standard for measuring a startup's lif
 
 ```mermaid
 graph TD
-    A[Acquisition] -->|Do they find you?| B[Activation]
-    B -->|Do they have a great first experience?| C[Retention]
-    C -->|Do they come back?| D[Revenue]
-    C -->|Do they tell others?| E[Referral]
-    D -->|Do they pay?| F[Profit]
+    A["Acquisition"] -->|Do they find you?| B["Activation"]
+    B -->|Do they have a great first experience?| C["Retention"]
+    C -->|Do they come back?| D["Revenue"]
+    C -->|Do they tell others?| E["Referral"]
+    D -->|Do they pay?| F["Profit"]
 
-    style C fill:#f9f,stroke:#333,stroke-width:4px
+    style C fill:#f9f,stroke:#333,stroke-width:4px,color:#000
 ```
 
 *   **Acquisition**: How do users find you? (SEO, SEM, viral).

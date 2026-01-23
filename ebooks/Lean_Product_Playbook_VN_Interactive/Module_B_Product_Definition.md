@@ -10,14 +10,14 @@ We are moving up the pyramid from Market (Problem Space) to Product (Solution Sp
 
 ```mermaid
 graph TD
-    subgraph Product [Product (Solution Space)]
-        UX[User Experience]
-        FS[Feature Set]:::current
-        VP[Value Proposition]:::current
+    subgraph P_SECTION [Product - Solution Space]
+        UX["User Experience"]
+        FS["Feature Set"]:::current
+        VP["Value Proposition"]:::current
     end
-    subgraph Market [Market (Problem Space)]
-        UN[Underserved Needs]
-        TC[Target Customer]
+    subgraph M_SECTION [Market - Problem Space]
+        UN["Underserved Needs"]
+        TC["Target Customer"]
     end
 
     UX --- FS
@@ -25,7 +25,7 @@ graph TD
     VP --- UN
     UN --- TC
 
-    classDef current fill:#f96,stroke:#333,stroke-width:4px;
+    classDef current fill:#f96,stroke:#333,stroke-width:4px,color:#000
 ```
 
 ---
@@ -56,22 +56,22 @@ It categorizes features based on how they affect customer satisfaction:
 ```mermaid
 graph TD
     %% Setup the graph axes
-    yTop[High Satisfaction] --- yBottom[High Dissatisfaction]
-    xLeft[Need Not Met] --- xRight[Need Fully Met]
+    yTop["High Satisfaction"] --- yBottom["High Dissatisfaction"]
+    xLeft["Need Not Met"] --- xRight["Need Fully Met"]
 
     %% Styles
-    linkStyle 0,1 stroke-width:0px,fill:none;
+    linkStyle 0,1 stroke-width:0px,fill:none
 
     %% Concept Nodes
-    subgraph Kano_Dynamics [Kano Model Dynamics]
+    subgraph KD_SECTION [Kano Model Dynamics]
         Delighters("🚀 Delighters<br/>(Wow factor, unexpected)")
         Performance("📈 Performance<br/>(More is better)")
         MustHaves("🛡️ Must-Haves<br/>(Table stakes, prevent dissatisfaction)")
     end
 
-    style Delighters fill:#d4edda,stroke:#28a745,stroke-width:2px
-    style Performance fill:#cce5ff,stroke:#007bff,stroke-width:2px
-    style MustHaves fill:#f8d7da,stroke:#dc3545,stroke-width:2px
+    style Delighters fill:#d4edda,stroke:#28a745,stroke-width:2px,color:#000
+    style Performance fill:#cce5ff,stroke:#007bff,stroke-width:2px,color:#000
+    style MustHaves fill:#f8d7da,stroke:#dc3545,stroke-width:2px,color:#000
 ```
 
 *(Note: In a detailed chart, Delighters curve exponentially up, Performance is a linear 45-degree line, and Must-haves curve logarithmically, flattening at neutral).*

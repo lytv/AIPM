@@ -20,33 +20,31 @@ Sau module này, bạn sẽ:
 
 ```mermaid
 graph BT
-    classDef market fill:#e1f5fe,stroke:#01579b,stroke-width:2px;
-    classDef product fill:#fff9c4,stroke:#fbc02d,stroke-width:2px;
-    classDef fit fill:#e0f2f1,stroke:#004d40,stroke-width:4px;
-
-    L1[1. Khách Hàng Mục Tiêu<br/>(Target Customer)]:::market
-    L2[2. Nhu Cầu Chưa Được Đáp Ứng<br/>(Underserved Needs)]:::market
-    L3[3. Tuyên Bố Giá Trị<br/>(Value Proposition)]:::product
-    L4[4. Bộ Tính Năng<br/>(Feature Set)]:::product
-    L5[5. Trải Nghiệm Người Dùng<br/>(UX)]:::product
+    L1["1. Khách Hàng Mục Tiêu<br/>(Target Customer)"]:::market
+    L2["2. Nhu Cầu Chưa Được Đáp Ứng<br/>(Underserved Needs)"]:::market
+    L3["3. Tuyên Bố Giá Trị<br/>(Value Proposition)"]:::product
+    L4["4. Bộ Tính Năng<br/>(Feature Set)"]:::product
+    L5["5. Trải Nghiệm Người Dùng<br/>(UX)"]:::product
 
     L1 --> L2
     L2 --> L3
     L3 --> L4
     L4 --> L5
 
-    subgraph "MARKET (Thị Trường)"
-    L1
-    L2
+    subgraph M_SECTION ["MARKET (Thị Trường)"]
+        L1
+        L2
     end
 
-    subgraph "PRODUCT (Sản Phẩm)"
-    L3
-    L4
-    L5
+    subgraph P_SECTION ["PRODUCT (Sản Phẩm)"]
+        L3
+        L4
+        L5
     end
 
-    linkStyle 1 stroke-width:4px,fill:none,stroke:red;
+    classDef market fill:#e1f5fe,stroke:#01579b,stroke-width:2px,color:#000
+    classDef product fill:#fff9c4,stroke:#fbc02d,stroke-width:2px,color:#000
+    linkStyle 1 stroke:#ff0000,stroke-width:4px
 ```
 
 > **💡 Định nghĩa: Product-Market Fit (Sự phù hợp giữa Sản phẩm và Thị trường)**
